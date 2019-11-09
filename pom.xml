@@ -44,10 +44,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<jvmArguments>
-						-DCONFIG_DIR=/opt/config
-						<!--<systemProperties>-->
-							<!--<systemProperty>CONFIG_DIR=/opt/config</systemProperty>-->
-						<!--</systemProperties>-->
+						-DCONFIG_DIR=/opt/properties
 					</jvmArguments>
 				</configuration>
 			</plugin>

@@ -23,7 +23,8 @@ public class PingController {
     public String pingProp(){
 
         String string = env.getProperty("message");
-        System.out.println("### pingService: "+ string);
+        System.out.println("### pingProp: access the properties via env on controller ");
+        System.out.println("### pingProp: "+ string);
 
         return string;
     }
@@ -31,6 +32,7 @@ public class PingController {
     @GetMapping("/ping-service")
     public String pingService(){
         String string = pingService.getString();
+        System.out.println("### pingService: access the properties via env on service ");
         System.out.println("### pingService: "+ string);
 
         return string;
